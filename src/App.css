@@ -1,3 +1,7 @@
-body {
-  /* background-color: rgb(103, 103, 126); */
+.bg-myRed {
+  background-color: crimson;
+}
+
+.content {
+  padding: 12px;
 }

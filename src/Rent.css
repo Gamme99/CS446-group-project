@@ -1,0 +1,68 @@
+body {
+  background-color: rgba(0, 0, 0, 0.712);
+}
+.filters {
+  border-style: solid;
+  height: 75px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin-left: 165px;
+  background-color: rgb(0, 0, 94);
+}
+
+.filters div {
+  margin-left: 10px;
+}
+.buy-rent {
+  /* border-style: dashed; */
+  width: 200px;
+  padding-top: px;
+}
+
+.buy-rent input {
+  height: 100%;
+  width: 50%;
+}
+.price-filter {
+  width: 200px;
+  height: 100%;
+  /* border-style: dashed; */
+  display: inline;
+}
+.price-filter input {
+  width: 50%;
+}
+.price-header {
+  margin-left: 50px;
+}
+
+.bed-bath {
+  /* border-style: dashed; */
+  width: 200px;
+  height: 100%;
+  display: flex;
+}
+
+.bed-bath div {
+  margin-left: 10px;
+
+  width: 200px;
+}
+
+.bedroom input {
+  width: 100%;
+}
+.bathroom input {
+  width: 100%;
+}
+.bed-header {
+  font-size: 20px;
+}
+.bath-header {
+  font-size: 20px;
+}
+
+h4 {
+  color: white;
+}

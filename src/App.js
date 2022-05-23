@@ -3,22 +3,21 @@ import Rent from "./Rent";
 import Landing from "./Landing";
 import Property from "./Property";
 import About from "./About";
-import Navigation from "./Navigation";
-import { Route, Link } from "react-router-dom";
+import NavBar from "./NavBar";
+import { Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
+// import { Navbar, NavbarBrand } from "react-bootstrap";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Route path="/" element={Landing} />
-      <Route path="/Rent" element={Rent} />
-      <Route path="/Property" element={Property} />
-      <Route path="/About" element={About} />
-
-      {/* <Landing />
+      <NavBar />
+      {/* <Route exact path="/Landing" component={Landing}></Route>
+      <Route exact path="/Rent" component={Rent}></Route>
+      <Route exact path="/Property" component={Property}></Route>
+      <Route exact path="/About" component={About}></Route>
+      </NavBar> */}
       <Rent />
-      <Property />
-      <About /> */}
     </div>
   );
 }
