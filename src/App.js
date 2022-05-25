@@ -15,8 +15,8 @@ function App() {
       {/* <Route exact path="/Landing" component={Landing}></Route>
       <Route exact path="/Rent" component={Rent}></Route>
       <Route exact path="/Property" component={Property}></Route>
-      <Route exact path="/About" component={About}></Route>
-      </NavBar> */}
+      <Route exact path="/About" component={About}></Route> */}
+
       <Rent />
     </div>
   );
