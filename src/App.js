@@ -9,6 +9,7 @@ import Banner from "./Banner";
 import { Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 // import { Navbar, NavbarBrand } from "react-bootstrap";
+import houseData from "./houses.json";
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
       <Route exact path="/Property" component={Property}></Route>
       <Route exact path="/About" component={About}></Route> */}
 
-      <Rent />
-      <Banner />
+      <Rent data={houseData} />
+      {/* <Banner /> */}
     </div>
   );
 }
