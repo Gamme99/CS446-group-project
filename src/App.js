@@ -1,29 +1,28 @@
 import React from "react";
-import "./css/App.css"
-import Rent from "./Rent";
-import Landing from "./Landing";
-import Property from "./Property";
-import About from "./About";
+import "./css/App.css";
 import NavBar from "./NavBar";
-import Banner from "./Banner";
-import { Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-// import { Navbar, NavbarBrand } from "react-bootstrap";
-import houseData from "./houses.json";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Rent from "./pages/Rent";
+import Landing from "./pages/Landing";
+import Property from "./pages/Property";
+import About from "./pages/About";
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      {/* <Route exact path="/Landing" component={Banner}></Route>
-      <Route exact path="/Rent" component={Rent}></Route>
-      <Route exact path="/Property" component={Property}></Route>
-      <Route exact path="/About" component={About}></Route> */}
+	return (
+		<Router>
+			<div className="App">
+				<NavBar></NavBar>
 
-      <Rent data={houseData} />
-      {/* <Banner /> */}
-    </div>
-  );
+				<Routes>
+					<Route path="/" element={<Landing />}></Route>
+					<Route path="/rent" element={<Rent />}></Route>
+					<Route path="/property" element={<Property />}></Route>
+					<Route path="/about" element={<About />}></Route>
+				</Routes>
+			</div>
+		</Router>
+	);
 }
 
 export default App;
