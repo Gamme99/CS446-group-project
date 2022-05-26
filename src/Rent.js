@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Rent.css";
+import "./css/Rent.css"
 import houseData from "./houses.json";
 
 export default function Rent(placeholder, data) {
