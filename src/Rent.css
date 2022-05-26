@@ -4,10 +4,10 @@ body {
 .filters {
   border-style: solid;
   height: 75px;
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 165px;
+  margin-left: 0px;
   background-color: rgb(0, 0, 94);
 }
 
@@ -17,7 +17,6 @@ body {
 .buy-rent {
   /* border-style: dashed; */
   width: 200px;
-  padding-top: px;
 }
 
 .buy-rent input {
@@ -46,8 +45,6 @@ body {
 
 .bed-bath div {
   margin-left: 10px;
-
-  width: 200px;
 }
 
 .bedroom input {
@@ -65,4 +62,74 @@ body {
 
 h4 {
   color: white;
+}
+
+.house-result {
+  margin-top: 25px;
+  height: 150px;
+  width: 100%;
+  border-style: dashed;
+  background-color: rgb(145, 138, 138);
+  display: flex;
+}
+.house-icon {
+  height: 100%;
+  width: 150px;
+  border-style: dashed;
+}
+
+.house-icon h3 {
+  margin-top: 35%;
+  margin-left: 20%;
+}
+.abb {
+  margin-left: 40px;
+  /* border-style: dashed; */
+  width: 300px;
+}
+
+.house-price {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.house-price {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.house-price p {
+  font-size: 30px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.order-title {
+  justify-content: center;
+  width: 80px;
+}
+
+.order-by {
+  margin-top: 30px;
+  display: flex;
+  width: 305px;
+  height: 50px;
+  border-style: solid;
+}
+
+.orders:hover {
+  color: blue;
+}
+
+.order-by .orders {
+  justify-content: center;
+  width: 75px;
 }

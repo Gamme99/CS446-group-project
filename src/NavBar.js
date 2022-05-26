@@ -8,10 +8,10 @@ export default function NavBar() {
     <div>
       <ul>
         <Nav>
-          <Nav.Link href="Landing"> Landing</Nav.Link>
-          <Nav.Link href="Rent"> Rent</Nav.Link>
-          <Nav.Link href="Property"> Property</Nav.Link>
-          <Nav.Link href="About"> About</Nav.Link>
+          <Nav.Link href="./Banner.js"> Landing</Nav.Link>
+          <Nav.Link href="./Rent.js"> Rent</Nav.Link>
+          <Nav.Link href="./Property.js"> Property</Nav.Link>
+          <Nav.Link href="./About.js"> About</Nav.Link>
           {/* <li>
             {" "}
             <Link to="/"> Landing</Link>
