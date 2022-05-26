@@ -1,36 +1,36 @@
 import React from "react";
+import { Nav, Navbar, NavbarBrand, Stack } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
-import { Nav, Navbar, NavbarBrand } from "react-bootstrap";
 
 export default function NavBar() {
-  return (
-    <div>
-      <ul>
-        <Nav>
-          <Nav.Link href="./Banner.js"> Landing</Nav.Link>
-          <Nav.Link href="./Rent.js"> Rent</Nav.Link>
-          <Nav.Link href="./Property.js"> Property</Nav.Link>
-          <Nav.Link href="./About.js"> About</Nav.Link>
-          {/* <li>
-            {" "}
-            <Link to="/"> Landing</Link>
-            {""}
-          </li>
-          <li>
-            {" "}
-            <Link to="/Rent"> Rent</Link>{" "}
-          </li>
-          <li>
-            {" "}
-            <Link to="/Property"> Property</Link>{" "}
-          </li>
-          <li>
-            {" "}
-            <Link to="/About"> About</Link>{" "}
-          </li> */}
-        </Nav>
-      </ul>
-    </div>
-  );
+	return (
+		<Navbar bg="light">
+			<Link to="./">
+				<NavbarBrand
+					style={{
+						marginRight: "20px",
+						marginLeft: "40px",
+						fontWeight: "bold",
+					}}
+				>
+					Residence Finder
+				</NavbarBrand>
+			</Link>
+
+			<Stack direction="horizontal" gap={4}>
+				<Nav.Item>
+					<Link to="./">Landing</Link>
+				</Nav.Item>
+				<Nav.Item>
+					<Link to="./rent">Rent</Link>
+				</Nav.Item>
+				<Nav.Item>
+					<Link to="./property">Property</Link>
+				</Nav.Item>
+				<Nav.Item>
+					<Link to="./about">About</Link>
+				</Nav.Item>
+			</Stack>
+		</Navbar>
+	);
 }
