@@ -19,9 +19,6 @@ export default function NavBar() {
 
 			<Stack direction="horizontal" gap={4}>
 				<Nav.Item>
-					<Link to="./">Landing</Link>
-				</Nav.Item>
-				<Nav.Item>
 					<Link to="./rent">Rent</Link>
 				</Nav.Item>
 				<Nav.Item>

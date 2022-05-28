@@ -50,7 +50,7 @@ export default function Listings(placeholder, data) {
 			{/* <h5>size: {houseData.length}</h5> */}
 			{houseData.map((value, key) => {
 				return (
-					<a href="./property.js">
+					<a href="./property">
 						<div className="house-result">
 							<div className="house-icon">
 								<h3>picture</h3>
