@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import houseData from "../data/houses.json";
 import "../css/Listings.css";
 
@@ -49,8 +51,10 @@ export default function Listings(placeholder, data) {
 
 			{/* <h5>size: {houseData.length}</h5> */}
 			{houseData.map((value, key) => {
+				const url = "/property/" + value.id;
+
 				return (
-					<a href="./property">
+					<Link to={url}>
 						<div className="house-result">
 							<div className="house-icon">
 								<h3>picture</h3>
@@ -68,7 +72,7 @@ export default function Listings(placeholder, data) {
 								</p>
 							</div>
 						</div>
-					</a>
+					</Link>
 				);
 			})}
 		</div>
