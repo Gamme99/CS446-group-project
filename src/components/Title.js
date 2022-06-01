@@ -1,10 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../css/Title.css";
 
 export default function Title({ address, cost, bedroom, bath }) {
 	return (
 		<div>
-			<p className="property address">{address}</p>
+			<div className="top-section">
+				<p className="property address">{address}</p>
+				<p className="breadcrumbs">Washington / Ellensburg</p>
+			</div>
 			<hr />
 			<p className="property details">
 				{cost}, {bedroom} Bedrooms, {bath} Bath

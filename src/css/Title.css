@@ -1,0 +1,31 @@
+.property {
+	margin: 0;
+}
+
+.property.address {
+	font-size: 2.75em;
+	font-weight: bold;
+	margin: 20px 20px 0 0;
+}
+
+.property.details {
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.top-section {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.breadcrumbs {
+	margin: 0;
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 1em;
+}
+
+hr {
+	margin: 0;
+}

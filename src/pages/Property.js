@@ -17,47 +17,38 @@ export default class Property extends Component {
 				<Row>
 					<Col id="left_column" className="column">
 						<p className="description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-							fugit rerum autem hic architecto ad voluptatibus aut! Natus, non
-							quas laboriosam ipsum sapiente et pariatur ipsa officiis incidunt
-							rerum. Nisi, libero fugit, facere perspiciatis dignissimos
-							asperiores laudantium suscipit dolor, pariatur earum ut. Quam
-							aliquam illo mollitia quo provident omnis molestiae.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Doloremque vel magni quisquam praesentium architecto maiores neque
+							veritatis possimus odio beatae ducimus nemo aliquid consequatur
+							ipsum quod quaerat ratione, quos tempora nisi accusamus
+							perspiciatis? Nesciunt veritatis odit facere nulla corrupti dolor
+							in molestiae expedita aliquam deserunt assumenda sequi tempore vel
+							laborum officia incidunt officiis reiciendis aliquid neque soluta
+							impedit, minus quas! Fugit harum eum expedita veritatis nemo
+							deleniti incidunt est quia alias cum nisi provident cumque
+							quisquam obcaecati illum, consectetur debitis officiis. Nesciunt
+							tenetur reprehenderit laudantium, voluptate eaque et, ullam in
+							velit repellat saepe quasi, est ea adipisci temporibus. Inventore,
+							modi.
 						</p>
 					</Col>
 					<Col id="right_column" className="column">
 						<Card className="card">
-							<Card.Header>Featured</Card.Header>
+							<Card.Header>Features</Card.Header>
 							<Card.Body>
-								<Card.Title>Special title treatment</Card.Title>
-								<Card.Text>
-									With supporting text below as a natural lead-in to additional
-									content.
-								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
+								<p>placeholder for features</p>
 							</Card.Body>
 						</Card>
 						<Card className="card">
-							<Card.Header>Featured</Card.Header>
+							<Card.Header>Contact</Card.Header>
 							<Card.Body>
-								<Card.Title>Special title treatment</Card.Title>
-								<Card.Text>
-									With supporting text below as a natural lead-in to additional
-									content.
-								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
+								<Card.Title>Central Park Apartments</Card.Title>
+								<Card.Text>may be a component</Card.Text>
 							</Card.Body>
 						</Card>
 						<Card className="card">
-							<Card.Header>Featured</Card.Header>
-							<Card.Body>
-								<Card.Title>Special title treatment</Card.Title>
-								<Card.Text>
-									With supporting text below as a natural lead-in to additional
-									content.
-								</Card.Text>
-								<Button variant="primary">Go somewhere</Button>
-							</Card.Body>
+							<Card.Header>Google Maps</Card.Header>
+							<Card.Body></Card.Body>
 						</Card>
 					</Col>
 				</Row>
