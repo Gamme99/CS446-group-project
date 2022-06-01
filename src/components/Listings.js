@@ -54,7 +54,7 @@ export default function Listings(placeholder, data) {
 				const url = "/property/" + value.id;
 
 				return (
-					<Link to={url}>
+					<Link to={url} key={value.id}>
 						<div className="house-result">
 							<div className="house-icon">
 								<h3>picture</h3>

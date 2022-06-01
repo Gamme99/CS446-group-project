@@ -22,7 +22,7 @@ export default function NavBar() {
 					<Link to="./rent">Rent</Link>
 				</Nav.Item>
 				<Nav.Item>
-					<Link to="./property">Property</Link>
+					<Link to="./property/1">Property (placeholder)</Link>
 				</Nav.Item>
 				<Nav.Item>
 					<Link to="./about">About</Link>

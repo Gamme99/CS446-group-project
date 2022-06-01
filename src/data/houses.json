@@ -5,7 +5,7 @@
 		"bathroom": "2",
 		"price": 1500,
 		"option": "Rent",
-		"id": 1
+		"id": 0
 	},
 	{
 		"address": "1st Ave South",
@@ -13,7 +13,7 @@
 		"bathroom": "1",
 		"price": 500000,
 		"option": "Buy",
-		"id": 2
+		"id": 1
 	},
 	{
 		"address": "2nd Ave South",
@@ -29,7 +29,7 @@
 		"bathroom": "2",
 		"price": 2000,
 		"option": "Rent",
-		"id": 2
+		"id": 3
 	},
 	{
 		"address": "North Alder Street",
@@ -37,7 +37,7 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "Rent",
-		"id": 2
+		"id": 4
 	},
 	{
 		"address": "5815 Rainier Avenue",
@@ -45,7 +45,7 @@
 		"bathroom": "2",
 		"price": 450000,
 		"option": "Buy",
-		"id": 2
+		"id": 5
 	},
 	{
 		"address": "123rd Avenue",
@@ -53,7 +53,7 @@
 		"bathroom": "1",
 		"price": 1500,
 		"option": "Buy",
-		"id": 2
+		"id": 6
 	},
 	{
 		"address": "123rd Main Street",
@@ -61,7 +61,7 @@
 		"bathroom": "1",
 		"price": 1400,
 		"option": "Rent",
-		"id": 2
+		"id": 7
 	},
 	{
 		"address": "Orcas street",
@@ -69,7 +69,7 @@
 		"bathroom": "2",
 		"price": 2100,
 		"option": "Rent",
-		"id": 2
+		"id": 8
 	},
 	{
 		"address": "Alder Avenue",
@@ -77,7 +77,7 @@
 		"bathroom": "3",
 		"price": 1100000,
 		"option": "Buy",
-		"id": 2
+		"id": 9
 	},
 	{
 		"address": "Top Street",
@@ -85,7 +85,7 @@
 		"bathroom": "2",
 		"price": 850000,
 		"option": "Buy",
-		"id": 2
+		"id": 10
 	},
 	{
 		"address": "532th Water Avenue",
@@ -93,7 +93,7 @@
 		"bathroom": "2",
 		"price": 1600,
 		"option": "Rent",
-		"id": 2
+		"id": 11
 	},
 	{
 		"address": "Uphill street",
@@ -101,7 +101,7 @@
 		"bathroom": "1",
 		"price": 1500,
 		"option": "Buy",
-		"id": 2
+		"id": 12
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -109,7 +109,7 @@
 		"bathroom": "4",
 		"price": 1500000,
 		"option": "Buy",
-		"id": 2
+		"id": 13
 	},
 	{
 		"address": "123 Main Street",
@@ -117,7 +117,7 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "rent",
-		"id": 2
+		"id": 14
 	},
 	{
 		"address": "12 Avenu",
@@ -125,7 +125,7 @@
 		"bathroom": "1",
 		"price": 1300,
 		"option": "Rent",
-		"id": 2
+		"id": 15
 	},
 	{
 		"address": "1st Avenue",
@@ -133,7 +133,7 @@
 		"bathroom": "2",
 		"price": 600000,
 		"option": "Buy",
-		"id": 2
+		"id": 16
 	},
 	{
 		"address": "MLK Way South",
@@ -141,7 +141,7 @@
 		"bathroom": "2",
 		"price": 1500,
 		"option": "Rent",
-		"id": 2
+		"id": 17
 	},
 	{
 		"address": "Seattle Street",
@@ -149,7 +149,7 @@
 		"bathroom": "2",
 		"price": 700000,
 		"option": "Buy",
-		"id": 2
+		"id": 18
 	},
 	{
 		"address": "5910 10th street",
@@ -157,7 +157,7 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "Rent",
-		"id": 2
+		"id": 19
 	},
 	{
 		"address": "mount Baker street",
@@ -165,7 +165,7 @@
 		"bathroom": "1",
 		"price": 900,
 		"option": "Rent",
-		"id": 2
+		"id": 20
 	},
 	{
 		"address": "13th Street",
@@ -173,7 +173,7 @@
 		"bathroom": "2",
 		"price": 1700,
 		"option": "Rent",
-		"id": 2
+		"id": 21
 	},
 	{
 		"address": "Main Avenue",
@@ -181,7 +181,7 @@
 		"bathroom": "1",
 		"price": 500,
 		"option": "Rent",
-		"id": 2
+		"id": 22
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -189,6 +189,6 @@
 		"bathroom": "4",
 		"price": 1200000,
 		"option": "Buy",
-		"id": 2
+		"id": 23
 	}
 ]
