@@ -4,77 +4,181 @@ import { Link } from "react-router-dom";
 import houseData from "../data/houses.json";
 import "../css/Listings.css";
 
-export default function Listings(placeholder, data) {
-	const [filteredHouses, setHouses] = useState([]);
+export default function Listings() {
+  const [filteredHouses, setHouses] = useState([]);
+  const [min, setMin] = useState("");
+  const [max, setMax] = useState("");
+  const [bedroom, setBedroom] = useState("");
+  const [bathroom, setBathroom] = useState("");
 
-	const handleRentClick = () => {
-		const filtered = data.filter((value) => {
-			console.log("prices: " + value.price);
-			return value.price;
-		});
-		setHouses(filtered);
-	};
+  const handleBuyClick = (button) => {
+    const filtered = houseData.filter((value) => value.option === button);
+    console.log("here");
+    console.log(filtered.length);
+    setHouses(filtered);
+  };
 
-	const handleBuyClick = () => {
-		console.log("Buy clicked");
-	};
+  const handleRentClick = (button) => {
+    const filtered = houseData.filter((value) => value.option === button);
+    console.log("down here");
+    console.log(filtered.length);
 
-	return (
-		<div>
-			<div className="filters">
-				<div className="buy-rent">
-					<input type="button" value="Rent"></input>
-					<input type="button" value="Buy"></input>
-				</div>
-				<div className="price-filter">
-					<h4 className="price-header">Price</h4>
-					<input type="number" name="minimum" placeholder="min"></input>
-					<input type="number" name="maximum" placeholder="max"></input>
-				</div>
-				<div className="bed-bath">
-					<div className="bedroom">
-						<h4 className="bed-header">Bedroom</h4>
-						<input type="number" name="bedroom" placeholder="bed"></input>
-					</div>
-					<div className="bathroom">
-						<h4 className="bath-header">Bathroom</h4>
-						<input type="number" name="bathroom" placeholder="bath"></input>
-					</div>
-				</div>
-			</div>
-			<div className="order-by">
-				<div className="order-title">Order by</div>
-				<button className="orders">Price</button>
-				<button className="orders">Bedroom</button>
-				<button className="orders">Bathroom</button>
-			</div>
+    setHouses(filtered);
+  };
 
-			{/* <h5>size: {houseData.length}</h5> */}
-			{houseData.map((value, key) => {
-				const url = "/property/" + value.id;
+  const handleApply = (event) => {
+    event.preventDefault();
+    const input = { min, max, bedroom, bathroom };
+    // console.log(input.min, input.bedroom);
 
-				return (
-					<Link to={url} key={value.id}>
-						<div className="house-result">
-							<div className="house-icon">
-								<h3>picture</h3>
-							</div>
-							<div className="abb">
-								<div>Address: {value.address}</div> <br />
-								<div>Bedroom: {value.bedroom}</div>
-								<br />
-								<div>Bathroom: {value.bathroom}</div>
-							</div>
+    // let filtered = houseData.filter((value) => {
+    //   if (value.min != null && value.min != 0) {
+    //     return value.min >= input.min;
+    //   }
+    // });
 
-							<div className="house-price">
-								<p>
-									{value.option}: ${value.price}
-								</p>
-							</div>
-						</div>
-					</Link>
-				);
-			})}
-		</div>
-	);
+    // filtered = filtered.filter((value) => {
+    //   if (value.max != null && value.max != 0) {
+    //     return value.max <= input.max;
+    //   }
+    // });
+
+    let filtered = houseData.filter((value) => {
+      if (value.bedroom != null && value.bedroom != 0) {
+        return value.bedroom === input.bedroom;
+      }
+    });
+
+    // filtered = filtered.filter((value) => {
+    //   if (value.bathroom != null && value.bathroom != 0) {
+    //     return value.bathroom === input.bathroom;
+    //   }
+    // });
+
+    setHouses(filtered);
+  };
+
+  return (
+    <div>
+      <form className="filters">
+        <div className="buy-rent">
+          <button
+            type="button"
+            value="Rent"
+            onClick={() => {
+              handleRentClick("Rent");
+            }}
+          >
+            {" "}
+            Rent
+          </button>
+          <button
+            type="button"
+            value="Buy"
+            onClick={() => {
+              handleBuyClick("Buy");
+            }}
+          >
+            {" "}
+            Buy
+          </button>
+        </div>
+
+        <div>
+          <div className="forms" onClick={handleApply}>
+            <div className="price-filter">
+              <h4 className="price-header">Price</h4>
+              <input
+                type="number"
+                name="minimum"
+                placeholder="min"
+                value={min}
+                onChange={(e) => setMin(e.target.value)}
+              ></input>
+              <input
+                type="number"
+                name="maximum"
+                placeholder="max"
+                value={max}
+                onChange={(e) => setMax(e.target.value)}
+              ></input>
+            </div>
+            <div className="bed-bath">
+              <div className="bedroom">
+                <h4 className="bed-header">Bedroom</h4>
+                <input
+                  type="number"
+                  name="bedroom"
+                  placeholder="bed"
+                  value={bedroom}
+                  onChange={(e) => setBedroom(e.target.value)}
+                ></input>
+              </div>
+              <div className="bathroom">
+                <h4 className="bath-header">Bathroom</h4>
+                <input
+                  type="number"
+                  name="bathroom"
+                  placeholder="bath"
+                  value={bathroom}
+                  onChange={(e) => setBathroom(e.target.value)}
+                ></input>
+              </div>
+            </div>
+
+            <div className="apply-filter" id="apply-filter">
+              <button type="submit" value="Apply">
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div className="order-by">
+        <div className="order-title">Order by</div>
+        <button
+          className="orders"
+          onClick={() =>
+            filteredHouses.sort((a, b) => {
+              return a.price - b.price;
+            })
+          }
+        >
+          Price
+        </button>
+        <button className="orders">Bedroom</button>
+        <button className="orders">Bathroom</button>
+      </div>
+
+      {/* <h5>size: {houseData.length}</h5> 
+	  .filter((val) =>{
+		  if(val.option == ){
+
+		  }
+	  }) */}
+      {filteredHouses.map((value) => {
+        return (
+          <a href="./property">
+            <div className="house-result">
+              <div className="house-icon">
+                <h3>picture</h3>
+              </div>
+              <div className="abb">
+                <div>Address: {value.address}</div> <br />
+                <div>Bedroom: {value.bedroom}</div>
+                <br />
+                <div>Bathroom: {value.bathroom}</div>
+              </div>
+
+              <div className="house-price">
+                <p>
+                  {value.option}: ${value.price}
+                </p>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  );
 }
