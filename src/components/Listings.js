@@ -162,7 +162,7 @@ export default function Listings() {
 	  }) */}
       {filteredHouses.map((value) => {
         return (
-          <a href="./property">
+          <a href="/property/1">
             <div className="house-result">
               <div className="house-icon">
                 <h3>picture</h3>
