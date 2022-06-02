@@ -5,6 +5,14 @@
 	margin-top: 8px;
 	padding: 16px;
 }
+
+.error {
+	color: red;
+	margin: auto;
+	margin-top: 2em;
+	width: 50%;
+}
+
 #left_column {
 	margin-left: 8px;
 }
