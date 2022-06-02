@@ -1,5 +1,13 @@
-import React, { Component, useEffect } from "react";
-import { Carousel, Container, Row, Col, Card, Button } from "react-bootstrap";
+import React from "react";
+import {
+	Carousel,
+	Container,
+	Row,
+	Col,
+	Card,
+	Button,
+	CarouselItem,
+} from "react-bootstrap";
 import {} from "react-router-dom";
 
 import houseData from "../data/houses.json";
@@ -12,22 +20,36 @@ const Property = () => {
 	let url = window.location.href;
 	const propertyId = url.substring(url.search("property") + 9);
 
-	// Retrieves and destructures
+	// Retrieves data from houseData by finding the entry with the matching ID.
 	const propertyData = houseData.filter((data) => {
 		return data.id == propertyId;
 	})[0];
 
+	// Error checking
 	if (!propertyData) {
 		return <h1 className="error">Invalid property ID provided.</h1>;
+	} else if (
+		!propertyData.address ||
+		!propertyData.bedroom ||
+		!propertyData.bathroom ||
+		!propertyData.price
+	) {
+		return <h1 className="error">Incomplete data provided.</h1>;
 	}
 
+	// Destructures the data.
 	const { address, bedroom, bathroom, price } = propertyData;
-
-	console.log(propertyData);
 
 	return (
 		<Container>
-			<img src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"></img>
+			<Carousel variant="dark">
+				<CarouselItem>
+					<img
+						src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"
+						alt="Picture of a home"
+					></img>
+				</CarouselItem>
+			</Carousel>
 			<Title
 				address={address}
 				cost={price}
