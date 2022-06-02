@@ -11,24 +11,28 @@ export default function Listings() {
   const [bedroom, setBedroom] = useState("");
   const [bathroom, setBathroom] = useState("");
 
+  //   setHouses(houseData);
+  let flag = false;
   const handleBuyClick = (button) => {
     const filtered = houseData.filter((value) => value.option === button);
-    console.log("here");
-    console.log(filtered.length);
+    // console.log("here");
+    // console.log(filtered.length);
     setHouses(filtered);
+    flag = true;
   };
 
   const handleRentClick = (button) => {
     const filtered = houseData.filter((value) => value.option === button);
-    console.log("down here");
-    console.log(filtered.length);
+    // console.log("down here");
+    // console.log(filtered.length);
 
     setHouses(filtered);
+    flag = true;
   };
 
   const handleApply = (event) => {
     event.preventDefault();
-    const input = { min, max, bedroom, bathroom };
+    // const input = { min, max, bedroom, bathroom };
     // console.log(input.min, input.bedroom);
 
     // let filtered = houseData.filter((value) => {
@@ -43,11 +47,11 @@ export default function Listings() {
     //   }
     // });
 
-    let filtered = houseData.filter((value) => {
-      if (value.bedroom != null && value.bedroom != 0) {
-        return value.bedroom === input.bedroom;
-      }
-    });
+    // let filtered = houseData.filter((value) => {
+    //   if (value.bedroom != null && value.bedroom != 0) {
+    //     return value.bedroom === input.bedroom;
+    //   }
+    // });
 
     // filtered = filtered.filter((value) => {
     //   if (value.bathroom != null && value.bathroom != 0) {
@@ -55,7 +59,7 @@ export default function Listings() {
     //   }
     // });
 
-    setHouses(filtered);
+    // setHouses(filtered);
   };
 
   return (
