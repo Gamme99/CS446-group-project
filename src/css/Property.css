@@ -1,4 +1,5 @@
 .column {
+	position: relative;
 	background-color: #ddd;
 	width: 50%;
 	margin: 24px;

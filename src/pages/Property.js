@@ -8,11 +8,11 @@ import {
 	Button,
 	CarouselItem,
 } from "react-bootstrap";
-import {} from "react-router-dom";
 
 import houseData from "../data/houses.json";
 
 import Title from "../components/Title";
+import Feature from "../components/Feature";
 import "../css/Property.css";
 
 const Property = () => {
@@ -38,7 +38,18 @@ const Property = () => {
 	}
 
 	// Destructures the data.
-	const { address, bedroom, bathroom, price } = propertyData;
+	const { address, bedroom, bathroom, option } = propertyData;
+
+	// Create a currency formatter.
+	var formatter = new Intl.NumberFormat("en-US", {
+		style: "currency",
+		currency: "USD",
+		maximumFractionDigits: 0,
+	});
+
+	// Format the price, append /month if the property is for rental.
+	let price = formatter.format(propertyData.price);
+	if (option == "Rent") price = price.concat("/month");
 
 	return (
 		<Container>
@@ -77,7 +88,7 @@ const Property = () => {
 					<Card className="card">
 						<Card.Header>Features</Card.Header>
 						<Card.Body>
-							<p>placeholder for features</p>
+							<Feature description="Animals Allowed"></Feature>
 						</Card.Body>
 					</Card>
 					<Card className="card">
