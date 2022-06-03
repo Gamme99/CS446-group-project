@@ -9,6 +9,7 @@
 .icon {
 	width: 5em;
 	height: 5em;
+	padding: 12px;
 	position: relative;
 }
 
@@ -20,10 +21,8 @@
 	border: 2px black solid;
 	border-radius: 2em;
 	background-color: white;
-	font-style: italic;
-
 	opacity: 0;
-	transition: opacity 0.1s;
+	transition: opacity 0.2s;
 }
 
 img:hover + .feature-description {

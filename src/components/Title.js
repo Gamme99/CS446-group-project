@@ -20,6 +20,6 @@ export default function Title({ address, cost, bedroom, bath }) {
 Title.propTypes = {
 	address: PropTypes.string.isRequired,
 	cost: PropTypes.string.isRequired,
-	bedroom: PropTypes.number.isRequired,
-	bath: PropTypes.number.isRequired,
+	bedroom: PropTypes.string.isRequired,
+	bath: PropTypes.string.isRequired,
 };

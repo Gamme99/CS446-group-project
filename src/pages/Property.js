@@ -88,7 +88,10 @@ const Property = () => {
 					<Card className="card">
 						<Card.Header>Features</Card.Header>
 						<Card.Body>
-							<Feature description="Animals Allowed"></Feature>
+							<Feature
+								icon="smoking-solid.png"
+								description="Animals Allowed"
+							></Feature>
 						</Card.Body>
 					</Card>
 					<Card className="card">

@@ -1,0 +1,46 @@
+{
+	"animals": {
+		"text": "Animals Allowed",
+		"icon-ref": "paw-solid.png"
+	},
+
+	"smoking": {
+		"text": "Smoking Allowed",
+		"icon-ref": "smoking-solid.png"
+	},
+
+	"no-smoking": {
+		"text": "No Smoking",
+		"icon-ref": "ban-smoking-solid.png"
+	},
+
+	"ac": {
+		"text": "Air Conditioning",
+		"icon-ref": "snowflake-solid.png"
+	},
+
+	"furnished": {
+		"text": "Fully Furnished",
+		"icon-ref": "couch-solid.png"
+	},
+
+	"pool": {
+		"text": "Swimming",
+		"icon-ref": "water-ladder-solid.png"
+	},
+
+	"lgbt": {
+		"text": "LGBTQ+ Friendly",
+		"icon-ref": "rainbow-solid.png"
+	},
+
+	"gym": {
+		"text": "Gym",
+		"icon-ref": "weight-hanging-solid.png"
+	},
+
+	"quiet": {
+		"text": "Quiet Area",
+		"icon-ref": "volume-xmark-solid.png"
+	}
+}
