@@ -1,10 +1,19 @@
-import React, { Component } from "react";
-
+import React from "react";
+import ftrData from "../data/features.json";
 import Feature from "./Feature";
-import f_data from "../data/features.json";
 
-export default class Features extends Component {
-	render() {
-		return <div>Features</div>;
-	}
+import "../css/Features.css";
+
+function Features({ data }) {
+	return (
+		<div className="features-container">
+			{data.map((feature) => {
+				const { ref, text } = ftrData[feature];
+				console.log(ref, text);
+				return <Feature icon={ref} description={text}></Feature>;
+			})}
+		</div>
+	);
 }
+
+export default Features;

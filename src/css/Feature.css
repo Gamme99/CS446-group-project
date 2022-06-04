@@ -21,11 +21,12 @@
 	border: 2px black solid;
 	border-radius: 2em;
 	background-color: white;
+	z-index: 100;
 	opacity: 0;
-	transition: opacity 0.2s;
+	transition: opacity 0.1s;
 }
 
 img:hover + .feature-description {
 	opacity: 1;
-	transition: opacity 0.5s;
+	transition: opacity 0.2s;
 }

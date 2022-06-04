@@ -1,46 +1,46 @@
 {
 	"animals": {
 		"text": "Animals Allowed",
-		"icon-ref": "paw-solid.png"
+		"ref": "https://i.imgur.com/8Hbh8In.png"
 	},
 
 	"smoking": {
 		"text": "Smoking Allowed",
-		"icon-ref": "smoking-solid.png"
+		"ref": "https://i.imgur.com/RAAIn4X.png"
 	},
 
 	"no-smoking": {
 		"text": "No Smoking",
-		"icon-ref": "ban-smoking-solid.png"
+		"ref": "https://i.imgur.com/9Np0k5D.png"
 	},
 
 	"ac": {
 		"text": "Air Conditioning",
-		"icon-ref": "snowflake-solid.png"
+		"ref": "https://i.imgur.com/MZxjRH1.png"
 	},
 
 	"furnished": {
 		"text": "Fully Furnished",
-		"icon-ref": "couch-solid.png"
+		"ref": "https://i.imgur.com/lhka9cS.png"
 	},
 
 	"pool": {
 		"text": "Swimming",
-		"icon-ref": "water-ladder-solid.png"
+		"ref": "https://i.imgur.com/bTTNyoR.png"
 	},
 
 	"lgbt": {
 		"text": "LGBTQ+ Friendly",
-		"icon-ref": "rainbow-solid.png"
+		"ref": "https://i.imgur.com/hn7aKyC.png"
 	},
 
 	"gym": {
 		"text": "Gym",
-		"icon-ref": "weight-hanging-solid.png"
+		"ref": "https://i.imgur.com/HjpTy9Y.png"
 	},
 
 	"quiet": {
 		"text": "Quiet Area",
-		"icon-ref": "volume-xmark-solid.png"
+		"ref": "https://i.imgur.com/CButWv9.png"
 	}
 }

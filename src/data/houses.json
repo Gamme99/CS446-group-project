@@ -5,7 +5,8 @@
 		"bathroom": "2",
 		"price": 1500,
 		"option": "Rent",
-		"id": 0
+		"id": 0,
+		"features": ["ac", "no-smoking", "gym"]
 	},
 	{
 		"address": "1st Ave South",
@@ -13,7 +14,8 @@
 		"bathroom": "1",
 		"price": 500000,
 		"option": "Buy",
-		"id": 1
+		"id": 1,
+		"features": ["animals", "smoking", "ac"]
 	},
 	{
 		"address": "2nd Ave South",
@@ -21,7 +23,8 @@
 		"bathroom": "1",
 		"price": 900,
 		"option": "Rent",
-		"id": 2
+		"id": 2,
+		"features": ["ac", "no-smoking", "gym"]
 	},
 	{
 		"address": "12th Street",
@@ -29,7 +32,8 @@
 		"bathroom": "2",
 		"price": 2000,
 		"option": "Rent",
-		"id": 3
+		"id": 3,
+		"features": ["quiet", "smoking"]
 	},
 	{
 		"address": "North Alder Street",
@@ -37,7 +41,8 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "Rent",
-		"id": 4
+		"id": 4,
+		"features": ["ac", "no-smoking", "gym"]
 	},
 	{
 		"address": "5815 Rainier Avenue",
@@ -45,7 +50,8 @@
 		"bathroom": "2",
 		"price": 450000,
 		"option": "Buy",
-		"id": 5
+		"id": 5,
+		"features": ["ac", "no-smoking", "gym"]
 	},
 	{
 		"address": "123rd Avenue",
@@ -53,7 +59,8 @@
 		"bathroom": "1",
 		"price": 1500,
 		"option": "Buy",
-		"id": 6
+		"id": 6,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "123rd Main Street",
@@ -61,7 +68,8 @@
 		"bathroom": "1",
 		"price": 1400,
 		"option": "Rent",
-		"id": 7
+		"id": 7,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Orcas street",
@@ -69,7 +77,8 @@
 		"bathroom": "2",
 		"price": 2100,
 		"option": "Rent",
-		"id": 8
+		"id": 8,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Alder Avenue",
@@ -77,7 +86,8 @@
 		"bathroom": "3",
 		"price": 1100000,
 		"option": "Buy",
-		"id": 9
+		"id": 9,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Top Street",
@@ -85,7 +95,8 @@
 		"bathroom": "2",
 		"price": 850000,
 		"option": "Buy",
-		"id": 10
+		"id": 10,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "532th Water Avenue",
@@ -93,7 +104,8 @@
 		"bathroom": "2",
 		"price": 1600,
 		"option": "Rent",
-		"id": 11
+		"id": 11,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Uphill street",
@@ -101,7 +113,8 @@
 		"bathroom": "1",
 		"price": 1500,
 		"option": "Buy",
-		"id": 12
+		"id": 12,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -109,7 +122,8 @@
 		"bathroom": "4",
 		"price": 1500000,
 		"option": "Buy",
-		"id": 13
+		"id": 13,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "123 Main Street",
@@ -117,7 +131,8 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "Rent",
-		"id": 14
+		"id": 14,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "12 Avenu",
@@ -125,7 +140,8 @@
 		"bathroom": "1",
 		"price": 1300,
 		"option": "Rent",
-		"id": 15
+		"id": 15,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "1st Avenue",
@@ -133,7 +149,8 @@
 		"bathroom": "2",
 		"price": 600000,
 		"option": "Buy",
-		"id": 16
+		"id": 16,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "MLK Way South",
@@ -141,7 +158,8 @@
 		"bathroom": "2",
 		"price": 1500,
 		"option": "Rent",
-		"id": 17
+		"id": 17,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Seattle Street",
@@ -149,7 +167,8 @@
 		"bathroom": "2",
 		"price": 700000,
 		"option": "Buy",
-		"id": 18
+		"id": 18,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "5910 10th street",
@@ -157,7 +176,8 @@
 		"bathroom": "2",
 		"price": 1100,
 		"option": "Rent",
-		"id": 19
+		"id": 19,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "mount Baker street",
@@ -165,7 +185,8 @@
 		"bathroom": "1",
 		"price": 900,
 		"option": "Rent",
-		"id": 20
+		"id": 20,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "13th Street",
@@ -173,7 +194,8 @@
 		"bathroom": "2",
 		"price": 1700,
 		"option": "Rent",
-		"id": 21
+		"id": 21,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "Main Avenue",
@@ -181,7 +203,8 @@
 		"bathroom": "1",
 		"price": 500,
 		"option": "Rent",
-		"id": 22
+		"id": 22,
+		"features": ["pool", "gym", "furnished"]
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -189,6 +212,7 @@
 		"bathroom": "4",
 		"price": 1200000,
 		"option": "Buy",
-		"id": 23
+		"id": 23,
+		"features": ["pool", "gym", "furnished"]
 	}
 ]

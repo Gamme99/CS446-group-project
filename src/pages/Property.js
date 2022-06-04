@@ -13,6 +13,7 @@ import houseData from "../data/houses.json";
 
 import Title from "../components/Title";
 import Feature from "../components/Feature";
+import Features from "../components/Features";
 import "../css/Property.css";
 
 const Property = () => {
@@ -38,7 +39,7 @@ const Property = () => {
 	}
 
 	// Destructures the data.
-	const { address, bedroom, bathroom, option } = propertyData;
+	const { address, bedroom, bathroom, option, features } = propertyData;
 
 	// Create a currency formatter.
 	var formatter = new Intl.NumberFormat("en-US", {
@@ -88,10 +89,7 @@ const Property = () => {
 					<Card className="card">
 						<Card.Header>Features</Card.Header>
 						<Card.Body>
-							<Feature
-								icon="smoking-solid.png"
-								description="Animals Allowed"
-							></Feature>
+							<Features data={features}></Features>
 						</Card.Body>
 					</Card>
 					<Card className="card">
