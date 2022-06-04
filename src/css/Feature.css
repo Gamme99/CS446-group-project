@@ -11,22 +11,36 @@
 	height: 5em;
 	padding: 12px;
 	position: relative;
+	transition-duration: 0.2s;
+	transition-property: transform;
+}
+
+.icon:hover {
+	transform: scale(1.1);
 }
 
 .feature-description {
-	position: absolute;
-	top: 5em;
+	position: relative;
+
 	margin: 0;
 	padding: 2px 8px;
 	border: 2px black solid;
 	border-radius: 2em;
 	background-color: white;
 	z-index: 100;
-	opacity: 0;
-	transition: opacity 0.1s;
+	opacity: 1;
+	transition: opacity 0.2s;
 }
 
-img:hover + .feature-description {
+.outer-div {
+	position: absolute;
+	width: max-content;
+	top: 5em;
+	z-index: 100;
+	opacity: 0;
+}
+
+img:hover + .outer-div {
 	opacity: 1;
 	transition: opacity 0.2s;
 }

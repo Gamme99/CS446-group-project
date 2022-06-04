@@ -15,7 +15,7 @@
 		"price": 500000,
 		"option": "Buy",
 		"id": 1,
-		"features": ["animals", "smoking", "ac"]
+		"features": ["animals", "smoking", "ac", "furnished", "pool"]
 	},
 	{
 		"address": "2nd Ave South",
