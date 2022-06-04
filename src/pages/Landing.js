@@ -8,7 +8,11 @@ export default function Landing() {
 			<div className="banner-info">
 				<h1>Where do you want to go? </h1>
 				<input type="text" className="textbox" />
-				<button className="button">GO</button>
+				<Link to="./Rent">
+					<button className="button" href="./Rent">
+						GO
+					</button>
+				</Link>
 			</div>
 		</div>
 	);
