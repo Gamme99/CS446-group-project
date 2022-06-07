@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, ListGroup, ListGroupItem } from "react-bootstrap";
 
 import houseData from "../data/houses.json";
 
@@ -8,7 +8,6 @@ import individual from "../img/user-solid.png";
 
 import Title from "../components/Title";
 import Features from "../components/Features";
-import Contact from "../components/Contact";
 import "../css/Property.css";
 
 const Property = () => {
@@ -57,8 +56,16 @@ const Property = () => {
 	if (option == "Rent") price = price.concat("/month");
 
 	return (
-		<Container>
-			<nav>hello lol</nav>
+		<Container fluid="xxl">
+			<ul class="breadcrumb">
+				<li>
+					<a href="/listings">Washington</a>
+				</li>
+				<li>
+					<a href="/listings">Ellensburg</a>
+				</li>
+				<li>{address}</li>
+			</ul>
 			<Row>
 				<Col xs={6} id="left-col">
 					<img
@@ -66,30 +73,37 @@ const Property = () => {
 						alt="Picture of a home"
 						className="property-image"
 					></img>
+
+					<ListGroup horizontal>
+						<ListGroupItem variant="secondary">{bedroom} Bedroom</ListGroupItem>
+						<ListGroupItem variant="secondary">
+							{bathroom} Bathroom
+						</ListGroupItem>
+						<ListGroupItem variant="success">{price}</ListGroupItem>
+					</ListGroup>
+
 					<p className="description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-						vel magni quisquam praesentium architecto maiores neque veritatis
-						possimus odio beatae ducimus nemo aliquid consequatur ipsum quod
-						quaerat ratione, quos tempora nisi accusamus perspiciatis? Nesciunt
-						veritatis odit facere nulla corrupti dolor in molestiae expedita
-						aliquam deserunt assumenda sequi tempore vel laborum officia
-						incidunt officiis reiciendis aliquid neque soluta impedit, minus
-						quas! Fugit harum eum expedita veritatis nemo deleniti incidunt est
-						quia alias cum nisi provident cumque quisquam obcaecati illum,
-						consectetur debitis officiis. Nesciunt tenetur reprehenderit
-						laudantium, voluptate eaque et, ullam in velit repellat saepe quasi,
-						est ea adipisci temporibus. Inventore, modi.
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ad
+						asperiores nihil aperiam modi inventore earum, quod ipsum soluta
+						illo corporis amet consequuntur in labore doloremque alias veniam
+						est adipisci ipsam dolore dolor fugiat quidem. Ex nihil quisquam
+						iure culpa obcaecati omnis at, rem quia, veritatis numquam sit
+						voluptas eaque cumque accusantium hic eveniet sed nulla impedit
+						dolores harum quidem. Deleniti eligendi officiis ipsum sapiente ex
+						dolore, error fugiat enim dolor vel accusamus quibusdam amet id iure
+						omnis facilis provident debitis in exercitationem assumenda?
+						Molestias architecto, dolor ipsa quo minus earum error! Fugit
+						dolorum voluptate, quo reiciendis dolore in blanditiis!
 					</p>
 				</Col>
 				<Col id="right-col">
 					<div className="section">
 						<Title
 							address={address}
-							cost={price}
-							bedroom={bedroom}
-							bath={bathroom}
+							title={title}
+							icon={images[icon]}
+							link={link}
 						></Title>
-						<Contact title={title} icon={images[icon]} link={link}></Contact>
 					</div>
 					<div className="section">
 						<h3 className="section-header">Features</h3>

@@ -25,6 +25,29 @@
 	font-size: 1em;
 }
 
+.contact-title:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.contact-container {
+	display: flex;
+	max-width: 100%;
+	max-height: 20px;
+	justify-content: baseline;
+	font-size: 1.2em;
+	font-style: italic;
+	padding: 8px;
+	padding-left: 0;
+	gap: 8px;
+}
+
+.contact-image {
+	object-fit: contain;
+	width: 25px;
+	height: 25px;
+}
+
 hr {
 	margin: 0;
 }

@@ -2,17 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import "../css/Title.css";
 
-export default function Title({ address, cost, bedroom, bath }) {
+export default function Title({ address, title, icon, link }) {
 	return (
 		<div>
 			<div className="top-section">
 				<p className="property address">{address}</p>
-				{/* <p className="breadcrumbs">Washington / Ellensburg</p> */}
 			</div>
 			<hr />
-			<p className="property details">
-				{cost}, {bedroom} Bedrooms, {bath} Bath
-			</p>
+			<div className="contact-container">
+				<img src={icon} alt="leaser icon" className="contact-image" />
+				<a href={link} className="contact-title">
+					{title}
+				</a>
+			</div>
 		</div>
 	);
 }
