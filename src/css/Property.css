@@ -25,12 +25,10 @@
 	border-radius: 8px;
 }
 
-.row {
-	margin-top: 20px;
-}
-
 /* Style the list */
 ul.breadcrumb {
+	margin-top: 12px;
+	margin-bottom: 12px;
 	padding: 10px 16px 10px 0px;
 	list-style: none;
 }

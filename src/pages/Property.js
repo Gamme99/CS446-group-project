@@ -121,7 +121,7 @@ const Property = () => {
 								Central Washington University.
 							</ListGroupItem>
 							<ListGroupItem className="comparative benefit">
-								This property is reported to be recently refurnished.
+								This property is reported to be recently renovated.
 							</ListGroupItem>
 							<ListGroupItem className="comparative negative">
 								This property is about <i>27%</i> more expensive compared to
