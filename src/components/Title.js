@@ -11,8 +11,8 @@ export default function Title({ address, title, icon, link }) {
 			<hr />
 			<div className="contact-container">
 				<img src={icon} alt="leaser icon" className="contact-image" />
-				<a href={link} className="contact-title">
-					{title}
+				<a href={link} className="contact-link">
+					<div className="contact-title">{title}</div>
 				</a>
 			</div>
 		</div>

@@ -74,12 +74,12 @@ const Property = () => {
 						className="property-image"
 					></img>
 
-					<ListGroup horizontal>
-						<ListGroupItem variant="secondary">{bedroom} Bedroom</ListGroupItem>
-						<ListGroupItem variant="secondary">
-							{bathroom} Bathroom
+					<ListGroup horizontal className="stats-container">
+						<ListGroupItem className="stats">{bedroom} Bedroom</ListGroupItem>
+						<ListGroupItem className="stats">{bathroom} Bathroom</ListGroupItem>
+						<ListGroupItem className="stats" id="price">
+							{price}
 						</ListGroupItem>
-						<ListGroupItem variant="success">{price}</ListGroupItem>
 					</ListGroup>
 
 					<p className="description">
@@ -109,6 +109,25 @@ const Property = () => {
 						<h3 className="section-header">Features</h3>
 						<hr />
 						<Features data={features}></Features>
+					</div>
+
+					<div className="section">
+						<h3 className="section-header">Comparatives</h3>
+						<hr />
+
+						<ListGroup flush id="comparative-list">
+							<ListGroupItem className="comparative benefit">
+								In a <i>10 mile</i> radius, this property is the closest one to
+								Central Washington University.
+							</ListGroupItem>
+							<ListGroupItem className="comparative benefit">
+								This property is reported to be recently refurnished.
+							</ListGroupItem>
+							<ListGroupItem className="comparative negative">
+								This property is about <i>27%</i> more expensive compared to
+								others just like it.
+							</ListGroupItem>
+						</ListGroup>
 					</div>
 
 					<div className="section">

@@ -68,8 +68,40 @@ ul.breadcrumb li a:hover {
 	font-size: 1.25em;
 }
 
-.list-group-item {
+.stats.list-group-item {
 	padding: 8px 32px;
+	font-weight: bold;
+	border-top: none;
+	border-bottom: none;
+	border-radius: 0;
+	border-color: #ccc;
+	color: #939ded;
+}
+
+.comparative.benefit {
+	color: #93edb6;
+}
+
+.comparative.negative {
+	color: #ed939d;
+}
+
+.comparative.list-group-item {
+	border-left: none;
+	border-right: none;
+}
+
+.comparative.list-group-item:first-child {
+	border-top: none;
+}
+
+.comparative.list-group-item:last-child {
+	border-bottom: none;
+}
+
+#price {
+	color: #939ded;
+	font-weight: bold;
 }
 
 #right-col {
