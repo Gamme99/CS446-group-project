@@ -6,7 +6,7 @@ import "../css/Features.css";
 
 function Features({ data }) {
 	return (
-		<div className="features-container">
+		<div className="features">
 			{data.map((feature) => {
 				const { ref, text } = ftrData[feature];
 				console.log(ref, text);

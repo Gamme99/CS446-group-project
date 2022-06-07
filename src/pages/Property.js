@@ -1,18 +1,9 @@
 import React from "react";
-import {
-	Carousel,
-	Container,
-	Row,
-	Col,
-	Card,
-	Button,
-	CarouselItem,
-} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import houseData from "../data/houses.json";
 
 import Title from "../components/Title";
-import Feature from "../components/Feature";
 import Features from "../components/Features";
 import "../css/Property.css";
 
@@ -54,22 +45,14 @@ const Property = () => {
 
 	return (
 		<Container>
-			<Carousel variant="dark">
-				<CarouselItem>
+			<nav>hello lol</nav>
+			<Row>
+				<Col xs={6} id="left-col">
 					<img
 						src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"
 						alt="Picture of a home"
+						className="property-image"
 					></img>
-				</CarouselItem>
-			</Carousel>
-			<Title
-				address={address}
-				cost={price}
-				bedroom={bedroom}
-				bath={bathroom}
-			></Title>
-			<Row>
-				<Col id="left_column" className="column">
 					<p className="description">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
 						vel magni quisquam praesentium architecto maiores neque veritatis
@@ -85,24 +68,28 @@ const Property = () => {
 						est ea adipisci temporibus. Inventore, modi.
 					</p>
 				</Col>
-				<Col id="right_column" className="column">
-					<Card className="card">
-						<Card.Header>Features</Card.Header>
-						<Card.Body>
-							<Features data={features}></Features>
-						</Card.Body>
-					</Card>
-					<Card className="card">
-						<Card.Header>Contact</Card.Header>
-						<Card.Body>
-							<Card.Title>Central Park Apartments</Card.Title>
-							<Card.Text>may be a component</Card.Text>
-						</Card.Body>
-					</Card>
-					<Card className="card">
-						<Card.Header>Google Maps</Card.Header>
-						<Card.Body></Card.Body>
-					</Card>
+				<Col id="right-col">
+					<div className="section">
+						<Title
+							address={address}
+							cost={price}
+							bedroom={bedroom}
+							bath={bathroom}
+						></Title>
+					</div>
+					<div className="section">
+						<h3 className="section-header">Features</h3>
+						<hr />
+						<Features data={features}></Features>
+					</div>
+					<div className="section">
+						<h3 className="section-header">Contact</h3>
+						<hr />
+					</div>
+					<div className="section">
+						<h3 className="section-header">Google Maps</h3>
+						<hr />
+					</div>
 				</Col>
 			</Row>
 		</Container>

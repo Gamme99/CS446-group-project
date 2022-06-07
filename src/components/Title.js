@@ -7,7 +7,7 @@ export default function Title({ address, cost, bedroom, bath }) {
 		<div>
 			<div className="top-section">
 				<p className="property address">{address}</p>
-				<p className="breadcrumbs">Washington / Ellensburg</p>
+				{/* <p className="breadcrumbs">Washington / Ellensburg</p> */}
 			</div>
 			<hr />
 			<p className="property details">

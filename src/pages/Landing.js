@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar";
+import { Link } from "react-router-dom";
 import "../css/Banner.css";
 
 export default function Landing() {
@@ -8,8 +8,8 @@ export default function Landing() {
 			<div className="banner-info">
 				<h1>Where do you want to go? </h1>
 				<input type="text" className="textbox" />
-				<Link to="./Rent">
-					<button className="button" href="./Rent">
+				<Link to="./listings">
+					<button className="button" href="./listings">
 						GO
 					</button>
 				</Link>
