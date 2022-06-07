@@ -21,7 +21,6 @@
 
 .feature-description {
 	position: relative;
-
 	margin: 0;
 	padding: 2px 8px;
 	border: 2px black solid;
@@ -35,7 +34,7 @@
 .outer-div {
 	position: absolute;
 	width: max-content;
-	top: 5em;
+	top: 5.5em;
 	z-index: 100;
 	opacity: 0;
 }

@@ -6,7 +6,12 @@
 		"price": 1500,
 		"option": "Rent",
 		"id": 0,
-		"features": ["ac", "no-smoking", "gym"]
+		"features": ["ac", "no-smoking", "gym"],
+		"contact": {
+			"title": "Julie Appleton",
+			"icon": "individual",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "1st Ave South",
@@ -15,7 +20,12 @@
 		"price": 500000,
 		"option": "Buy",
 		"id": 1,
-		"features": ["animals", "smoking", "ac", "furnished", "pool"]
+		"features": ["animals", "smoking", "ac", "furnished", "pool"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "2nd Ave South",
@@ -24,7 +34,12 @@
 		"price": 900,
 		"option": "Rent",
 		"id": 2,
-		"features": ["ac", "no-smoking", "gym"]
+		"features": ["ac", "no-smoking", "gym"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "12th Street",
@@ -33,7 +48,12 @@
 		"price": 2000,
 		"option": "Rent",
 		"id": 3,
-		"features": ["quiet", "smoking"]
+		"features": ["quiet", "smoking"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "North Alder Street",
@@ -42,7 +62,12 @@
 		"price": 1100,
 		"option": "Rent",
 		"id": 4,
-		"features": ["ac", "no-smoking", "gym"]
+		"features": ["ac", "no-smoking", "gym"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "5815 Rainier Avenue",
@@ -51,7 +76,12 @@
 		"price": 450000,
 		"option": "Buy",
 		"id": 5,
-		"features": ["ac", "no-smoking", "gym"]
+		"features": ["ac", "no-smoking", "gym"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "123rd Avenue",
@@ -60,7 +90,12 @@
 		"price": 1500,
 		"option": "Buy",
 		"id": 6,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "123rd Main Street",
@@ -69,7 +104,12 @@
 		"price": 1400,
 		"option": "Rent",
 		"id": 7,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Orcas street",
@@ -78,7 +118,12 @@
 		"price": 2100,
 		"option": "Rent",
 		"id": 8,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Alder Avenue",
@@ -87,7 +132,12 @@
 		"price": 1100000,
 		"option": "Buy",
 		"id": 9,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Top Street",
@@ -96,7 +146,12 @@
 		"price": 850000,
 		"option": "Buy",
 		"id": 10,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "532th Water Avenue",
@@ -105,7 +160,12 @@
 		"price": 1600,
 		"option": "Rent",
 		"id": 11,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Uphill street",
@@ -114,7 +174,12 @@
 		"price": 1500,
 		"option": "Buy",
 		"id": 12,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -123,7 +188,12 @@
 		"price": 1500000,
 		"option": "Buy",
 		"id": 13,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "123 Main Street",
@@ -132,7 +202,12 @@
 		"price": 1100,
 		"option": "Rent",
 		"id": 14,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "12 Avenu",
@@ -141,7 +216,12 @@
 		"price": 1300,
 		"option": "Rent",
 		"id": 15,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "1st Avenue",
@@ -150,7 +230,12 @@
 		"price": 600000,
 		"option": "Buy",
 		"id": 16,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "MLK Way South",
@@ -159,7 +244,12 @@
 		"price": 1500,
 		"option": "Rent",
 		"id": 17,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Seattle Street",
@@ -168,7 +258,12 @@
 		"price": 700000,
 		"option": "Buy",
 		"id": 18,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "5910 10th street",
@@ -177,7 +272,12 @@
 		"price": 1100,
 		"option": "Rent",
 		"id": 19,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "mount Baker street",
@@ -186,7 +286,12 @@
 		"price": 900,
 		"option": "Rent",
 		"id": 20,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "13th Street",
@@ -195,7 +300,12 @@
 		"price": 1700,
 		"option": "Rent",
 		"id": 21,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "Main Avenue",
@@ -204,7 +314,12 @@
 		"price": 500,
 		"option": "Rent",
 		"id": 22,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	},
 	{
 		"address": "23rd Ave Southwest",
@@ -213,6 +328,11 @@
 		"price": 1200000,
 		"option": "Buy",
 		"id": 23,
-		"features": ["pool", "gym", "furnished"]
+		"features": ["pool", "gym", "furnished"],
+		"contact": {
+			"title": "Central Park Apartments",
+			"icon": "corporate",
+			"link": "https://www.google.com"
+		}
 	}
 ]

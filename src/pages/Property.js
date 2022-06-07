@@ -3,8 +3,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import houseData from "../data/houses.json";
 
+import corporate from "../img/landmark-solid.png";
+import individual from "../img/user-solid.png";
+
 import Title from "../components/Title";
 import Features from "../components/Features";
+import Contact from "../components/Contact";
 import "../css/Property.css";
 
 const Property = () => {
@@ -30,7 +34,16 @@ const Property = () => {
 	}
 
 	// Destructures the data.
-	const { address, bedroom, bathroom, option, features } = propertyData;
+	const { address, bedroom, bathroom, option, features, contact } =
+		propertyData;
+	const { title, icon, link } = contact;
+
+	// React handles passing images as props in a miserable manner.
+	// As such, all images must be imported and kept in a dictionary like so to be passed into Contact.js
+	const images = {
+		corporate: corporate,
+		individual: individual,
+	};
 
 	// Create a currency formatter.
 	var formatter = new Intl.NumberFormat("en-US", {
@@ -76,16 +89,14 @@ const Property = () => {
 							bedroom={bedroom}
 							bath={bathroom}
 						></Title>
+						<Contact title={title} icon={images[icon]} link={link}></Contact>
 					</div>
 					<div className="section">
 						<h3 className="section-header">Features</h3>
 						<hr />
 						<Features data={features}></Features>
 					</div>
-					<div className="section">
-						<h3 className="section-header">Contact</h3>
-						<hr />
-					</div>
+
 					<div className="section">
 						<h3 className="section-header">Google Maps</h3>
 						<hr />
