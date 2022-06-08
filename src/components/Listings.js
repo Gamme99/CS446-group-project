@@ -155,6 +155,7 @@ export default function Listings() {
 			</div>
 
 			{filteredHouses.map((value) => {
+				let url = "/property/" + value.id;
 				return (
 					<Link to={url}>
 						<div className="house-result">
