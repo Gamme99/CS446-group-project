@@ -7,6 +7,11 @@
 	font-weight: bold;
 }
 
+.property.address:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 .property.details {
 	font-size: 1.25em;
 	font-style: italic;

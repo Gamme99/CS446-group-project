@@ -18,11 +18,34 @@
 	width: 50%;
 }
 
-.property-image {
+.image {
 	width: 100%;
 	object-fit: cover;
 	height: 40vh;
 	border-radius: 8px;
+}
+
+.map-container {
+	position: relative;
+	padding: 12px 4px;
+	height: 20vh;
+	cursor: pointer;
+}
+
+.image.map {
+	width: 100%;
+	height: 100%;
+}
+
+.map.link {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	z-index: 100;
+	bottom: 12px;
+	left: 12px;
+	background-color: #ccc;
+	padding: 2px;
 }
 
 /* Style the list */
@@ -77,11 +100,11 @@ ul.breadcrumb li a:hover {
 }
 
 .comparative.benefit {
-	color: #93edb6;
+	color: #65cb8c;
 }
 
 .comparative.negative {
-	color: #ed939d;
+	color: #f06f7e;
 }
 
 .comparative.list-group-item {

@@ -6,12 +6,18 @@ export default function Title({ address, title, icon, link }) {
 	return (
 		<div>
 			<div className="top-section">
-				<p className="property address">{address}</p>
+				<a
+					href="https://www.google.com/maps/place/Central+Park/@47.015133,-120.5292847,18z/data=!4m5!3m4!1s0x5499f320b301d3d7:0x79e1ace4016bb8d7!8m2!3d47.0147252!4d-120.5278336"
+					target="_blank"
+					className="property address"
+				>
+					{address}
+				</a>
 			</div>
 			<hr />
 			<div className="contact-container">
 				<img src={icon} alt="leaser icon" className="contact-image" />
-				<a href={link} className="contact-link">
+				<a href={link} target="_blank" className="contact-link">
 					<div className="contact-title">{title}</div>
 				</a>
 			</div>

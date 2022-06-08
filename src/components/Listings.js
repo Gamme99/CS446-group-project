@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import houseData from "../data/houses.json";
@@ -61,6 +61,12 @@ export default function Listings() {
 
 		// setHouses(filtered);
 	};
+
+	// Populate the list on mount.
+	useEffect(() => {
+		setHouses(houseData);
+		flag = true;
+	}, []);
 
 	return (
 		<div>

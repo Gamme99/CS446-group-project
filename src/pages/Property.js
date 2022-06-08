@@ -71,7 +71,7 @@ const Property = () => {
 					<img
 						src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/TypesOfHomes/types-of-homes-hero.jpg"
 						alt="Picture of a home"
-						className="property-image"
+						className="property image"
 					></img>
 
 					<ListGroup horizontal className="stats-container">
@@ -124,8 +124,8 @@ const Property = () => {
 								This property is reported to be recently renovated.
 							</ListGroupItem>
 							<ListGroupItem className="comparative negative">
-								This property is about <i>27%</i> more expensive compared to
-								others just like it.
+								This property is <i>27%</i> more expensive compared to others
+								just like it.
 							</ListGroupItem>
 						</ListGroup>
 					</div>
@@ -133,6 +133,25 @@ const Property = () => {
 					<div className="section">
 						<h3 className="section-header">Google Maps</h3>
 						<hr />
+						<div className="map-container">
+							<a
+								href="https://www.google.com/maps/place/Central+Park/@47.015133,-120.5292847,18z/data=!4m5!3m4!1s0x5499f320b301d3d7:0x79e1ace4016bb8d7!8m2!3d47.0147252!4d-120.5278336"
+								target="_blank"
+							>
+								<img
+									className="map image"
+									src="https://i.imgur.com/vS1aHrj.png"
+									alt="maps location"
+								/>
+								<div className="div" style={{ position: "absolute" }}>
+									<img
+										src="https://i.imgur.com/NlKCD1N.png"
+										alt="map link"
+										className="map link"
+									/>
+								</div>
+							</a>
+						</div>
 					</div>
 				</Col>
 			</Row>
