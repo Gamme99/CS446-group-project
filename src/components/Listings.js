@@ -70,8 +70,8 @@ export default function Listings() {
 
 	return (
 		<div>
-			<form className="filters">
-				<div className="buy-rent">
+			<form className="listing filters">
+				<div className="listing buy-rent">
 					<button
 						type="button"
 						value="Rent"
@@ -95,9 +95,9 @@ export default function Listings() {
 				</div>
 
 				<div>
-					<div className="forms" onClick={handleApply}>
-						<div className="price-filter">
-							<h4 className="price-header">Price</h4>
+					<div className="listing forms" onClick={handleApply}>
+						<div className="listing price-filter">
+							<h4 className="listing price-header">Price</h4>
 							<input
 								type="number"
 								name="minimum"
@@ -113,9 +113,9 @@ export default function Listings() {
 								onChange={(e) => setMax(e.target.value)}
 							></input>
 						</div>
-						<div className="bed-bath">
-							<div className="bedroom">
-								<h4 className="bed-header">Bedroom</h4>
+						<div className="listing bed-bath">
+							<div className="listing bedroom">
+								<h4 className="listing bed-header">Bedroom</h4>
 								<input
 									type="number"
 									name="bedroom"
@@ -124,8 +124,8 @@ export default function Listings() {
 									onChange={(e) => setBedroom(e.target.value)}
 								></input>
 							</div>
-							<div className="bathroom">
-								<h4 className="bath-header">Bathroom</h4>
+							<div className="listing bathroom">
+								<h4 className="listing bath-header">Bathroom</h4>
 								<input
 									type="number"
 									name="bathroom"
@@ -136,7 +136,7 @@ export default function Listings() {
 							</div>
 						</div>
 
-						<div className="apply-filter" id="apply-filter">
+						<div className="listing apply-filter" id="apply-filter">
 							<button type="submit" value="Apply">
 								Apply
 							</button>
@@ -144,10 +144,10 @@ export default function Listings() {
 					</div>
 				</div>
 			</form>
-			<div className="order-by">
-				<div className="order-title">Order by</div>
+			<div className="listing order-by">
+				<div className="listing order-title">Order by</div>
 				<button
-					className="orders"
+					className="listing orders"
 					onClick={() =>
 						filteredHouses.sort((a, b) => {
 							return a.price - b.price;
@@ -156,26 +156,26 @@ export default function Listings() {
 				>
 					Price
 				</button>
-				<button className="orders">Bedroom</button>
-				<button className="orders">Bathroom</button>
+				<button className="listing orders">Bedroom</button>
+				<button className="listing orders">Bathroom</button>
 			</div>
 
 			{filteredHouses.map((value) => {
 				let url = "/property/" + value.id;
 				return (
 					<Link to={url}>
-						<div className="house-result">
-							<div className="house-icon">
+						<div className="listing house-result">
+							<div className="listing house-icon">
 								<h3>picture</h3>
 							</div>
-							<div className="abb">
+							<div className="listing abb">
 								<div>Address: {value.address}</div> <br />
 								<div>Bedroom: {value.bedroom}</div>
 								<br />
 								<div>Bathroom: {value.bathroom}</div>
 							</div>
 
-							<div className="house-price">
+							<div className="listing house-price">
 								<p>
 									{value.option}: ${value.price}
 								</p>

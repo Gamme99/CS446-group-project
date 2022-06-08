@@ -6,6 +6,10 @@
 	padding: 16px;
 }
 
+.row {
+	gap: 2vh;
+}
+
 .description {
 	font-size: 1.25em;
 	margin-top: 20px;

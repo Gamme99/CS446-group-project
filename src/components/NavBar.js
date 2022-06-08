@@ -5,7 +5,7 @@ import "../css/Navbar.css";
 
 export default function NavBar() {
 	return (
-		<Navbar bg="light">
+		<Navbar bg="dark" variant="dark">
 			<div className="home">
 				<Link to="./">
 					<NavbarBrand
@@ -23,7 +23,7 @@ export default function NavBar() {
 
 			<div
 				className="about ms-auto"
-				style={{ marginRight: "5vh", fontSize: "1.25em" }}
+				style={{ marginRight: "5vh", fontSize: "1.25em", color: "#fff" }}
 			>
 				<Nav.Item>
 					<Link to="./about">About</Link>
